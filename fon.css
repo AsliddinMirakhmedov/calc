@@ -1,0 +1,14 @@
+@media(prefers-color-scheme:dark) {
+    body {
+        background-color: #313131;
+    }
+    .calc_title {
+        color: white !important;
+    }
+    #result {
+        color: white !important;
+    }
+    hr {
+        color: wheat;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Calculator</title>
+    <link rel="stylesheet" href="./fonts/all.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap.css">
+    <link rel="stylesheet" href="./fon.css">
+</head>
+
+<body>
+     <div class="container">
+        <div class="row" style="display: flex;justify-content: center;" >
+            <div class="col-md-3 mt-5">
+                <h1 class="calc_title" style="color: #313131;text-align: center; font-size: 25px; margin-bottom: 10px;">Calculator</h1>
+                <div class="form-group mt-2">
+                    <input id="fNum" placeholder="First Number" type="number" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <input id="sNum" placeholder="Second Number" type="number" class="form-control">
+                </div>
+                <div style="display: flex;gap: 10px; justify-content: center;" class="form-group mt-2">
+                    <button onclick="calculatePlus()" class="btn btn-success"><i class="far fa-plus"></i></button>
+                    <button onclick="calculateMinus()" class="btn btn-success"><i class="far fa-minus"></i></button>
+                    <button onclick="calculateMultiply()" class="btn btn-success"><i style="transform: rotate(45deg); font-weight: 500;" class="far fa-plus"></i></button>
+                    <button onclick="calculateDiv()" class="btn btn-success"><i class="far fa-divide"></i></button>
+                    <button onclick="calculateremainder()" class="btn btn-success"><i style="font-weight: 300 !important;" class="far fa-percent"></i></button>
+                </div> <hr> 
+                <div class="form-group mt-2">
+                    <p id="result" >Result:</p>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.js" ></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
